@@ -77,7 +77,7 @@ def get_one_user(current_user, public_id):
 
 @app.route('/user', methods=['POST'])
 @token_required
-def create_user():
+def create_user(current_user):
 
     data = request.get_json()
 
