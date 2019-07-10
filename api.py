@@ -105,7 +105,7 @@ def delete_user(current_user, public_id):
     return jsonify({'message' : 'The user has been deleted!'})
 
 #Take user name and password from user, HTTP authentication and return token which expire after 30 minutes
-# Only login route work with HTTP basic authentication and all the other route work with the token.
+# Only login route work with HTTP basic authentication and all the other route work with the token. login
 @app.route('/login')
 def login():
     auth = request.authorization
